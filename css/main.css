@@ -1,0 +1,129 @@
+body {
+   font-family: 'Oswald', sans-serif;
+   letter-spacing: -0.05em;
+}
+
+header {
+    background-color: black;
+    padding: 5px;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+}
+.heading {
+   padding: 5px 0;
+   text-align: center;
+   border-bottom: 2px solid black;
+   background-color: beige;
+}
+.heading div {
+    border-bottom: 4px solid black;
+    padding: 0px;
+    margin: 0px;
+}
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 5% 0 0 0;
+  outline: 0;
+  padding: 15px 0;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+input[placeholder="required"] {
+    text-align: right;
+    padding-right: 3px;
+    line-height: normal;
+}
+input[type="text"]:focus {
+  outline: solid 2px red;
+
+ }
+
+
+label {
+    padding-bottom: 2px;
+    text-align: right;
+}
+
+input::-webkit-input-placeholder {
+   padding-right: 5%;
+}
+
+.contact-info {
+    border-bottom: solid 2px black;
+}
+fieldset {
+    border: none;
+    margin: 5% 0;
+    padding: 0px;
+}
+button {
+  padding: 19px 39px 18px 39px;
+  color: #FFF;
+  background-color: #4bc970;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid #3ac162;
+  border-width: 1px 1px 3px;
+  box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset;
+  margin-bottom: 10px;
+}
+.copyright {
+    text-align: center;
+    font-style: italic;
+}
+legend {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: larger;
+}
+#zip {
+    width: 50%;
+}
+
+
+@media screen and (min-width: 760px) {
+
+body {
+    letter-spacing: 0em;
+}
+
+  .container {
+      max-width: 560px;
+      margin: auto;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+
+  .container {
+      max-width: 760px;
+      margin: auto;
+  }
+
+  body {
+      letter-spacing: 0em;
+  }
+
+}
