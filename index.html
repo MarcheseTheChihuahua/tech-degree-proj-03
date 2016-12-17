@@ -21,7 +21,7 @@
         <form action="index.html" method="post">
 
 
-        <fieldset>
+        <fieldset class="contact clearfix">
             <legend>Contact Information</legend>
 
             <label for="name">Full Name:</label>
@@ -101,7 +101,7 @@
 
             </select>
 
-            <label for="zip">Zip Code</label><br>
+            <label for="zip" class="zip-code">Zip Code</label>
             <input type="text" id="zip" name="zip">
 
         </fieldset>
@@ -111,22 +111,29 @@
 
                 <p>Select the newsletters you would like to receive</p>
 
-                <input type="checkbox" name="newsletter" value="html">HTML News <br>
-                <input type="checkbox" name="newsletter" value="css">CSS News <br>
-                <input type="checkbox" name="newsletter" value="javascript">Javascript News <br>
+                <input type="checkbox" id="html-news" name="html-news" value="html-news">
+				<label for="html-news">HTML News</label>
+
+                <input type="checkbox" id="javascript-news" name="javascript-news" value="javascript-news">
+                <label for="javascript-news">Javascript News</label><br>
+
+                <input type="checkbox" id="css-news" name="css-news" value="css-news">
+                <label for="css-news">CSS News</label>
 
                 <h4>Newsletter format</h4>
 
-                <input type="radio" name="newsletter-format" value="html">HTML <br>
-                <input type="radio" name="newsletter-format" value="plain-text">Pain Text <br>
+                <input type="radio" id="html" name="newsletter-format" value="html">
+                <label for="html">HTML</label><br>
+                <input type="radio" id="plain-text" name="newsletter-format" value="plain-text">
+                <label for="plain-text">Plain text</label><br>
 
                 <h4>What products do you use?</h4>
-                   <input type="checkbox" id="apple" value="box_front" name="user_front"><label class="light" for="frontend">Apple</label><br>
-                   <input type="checkbox" id="microsoft" value="box_back" name="user_back"><label class="light" for="backend">Microsoft</label><br>
+                   <input type="checkbox" id="apple" value="apple" name="apple"><label for="apple">Apple</label><br>
+                   <input type="checkbox" id="microsoft" value="microsoft" name="microsoft"><label for="microsoft">Microsoft</label><br><br>
 
-                <p>Other topics you'd like to hear about</p>
+                <label for="other-topics">Other topics you'd like to hear about</label>
 
-                <textarea id="bio" name="user-bio"></textarea>
+                <textarea id="other-topics" name="other-topics-box"></textarea>
 
                 <button type="submit">Sign Up</button>
 
