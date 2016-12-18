@@ -51,7 +51,9 @@ input[placeholder="required"] {
     padding-right: 3px;
     line-height: normal;
 }
-input[type="text"]:focus {
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
   outline: solid 2px red;
 
  }
@@ -170,8 +172,16 @@ form {
   input[type="tel"],
   textarea,
   select {
-    display: block;
-    width: 100%;
+    display: inline-block;
+  }
+    .contact label {
+    width: 19%;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    width: 79%;
   }
 
   .contact {
